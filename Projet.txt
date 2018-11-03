@@ -1,0 +1,27 @@
+Interface Joueur c'est suuuuuuuuuuuuuuuur
+
+////////////////////////////////Pour domino-gomettes //////////////////////////////
+
+Atribut simple(Basique) Forme et couleur
+Si même couleur U même forme un foncion renverra true.
+Comme les règle son basiquement les même que pour le domino normale, on pourra utiliser les condition 
+de victoire ou de défaite dans une interface avec une fonction qui renverra un boolean
+le gros du probleme reste tjrs la partie graphique
+
+
+
+
+
+//////////////////////////////////Pour puzzle:///////////////////////////////////////
+
+Toute les piece sont blanche au début 
+
+A verifié pour sûr: les coin et côté
+
+On peut utiliser des attribut haut, bas, gauche, droite
+Il y aura différent états selon les côté
+Pour les coté par exemple il y aura des états qui seron null car il ne peuvent pas se "connecter sur plusieurs côte"
+Les fonction sont assez simple à mettre en place
+La véritable dificulté sera les graphisme.
+
+                      
