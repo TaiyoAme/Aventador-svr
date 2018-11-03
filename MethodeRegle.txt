@@ -1,0 +1,40 @@
+					Règle des jeux sous forme de méthode (a modeliser avec StarUML)
+Catégorie:|| Nom du jeu + methode associer   ||		Domaine d'action de la methode agit 		||	Retour de la methode			||
+							
+		Règle du domino :
+Initialement : //Je sais pas si on met cette interface dans commencement bref ; 
+	-protected int Limite(); 		//Sur le nbr de domino  					Renvoie le nmb de domino (Limité)
+
+Joueur : // presque sur qu'il y aura une interface joueur;
+	-protected void main(); 		//Joueur afin de pouvoir l'essayer dans un test			Affiche la main du joueur (les dominos qu'il possède)
+	-protected String toString()		//Meme chose							Affiche les informations du joueur en question 
+	-	
+
+
+Pour commencer : 	// Interface commencement
+Plusieurs possibilités :
+	-protected Joueur plusJeune(); 		// sur la liste des joueur, ou autre on verra par la suite; 	Renvoie le joueur le plus jeune, qui commencera;
+	-protected Joueur doubleLePlusGrand(); 	// Pareil sur la liste de joueur; 				Revoie le joueur qui a le double le plus grand => commence;
+	-protected Joueur PiocheEleve(); 	// Meme chose ; 						Renvoie le joueur dont le total des pts du domino pioché au hasard sera le plus grand => commence 
+	
+
+Domino ://Ce sera a priori une class 
+Argument(s): (Private ou public on s'en fou pour l'instant)
+	-int partieGauche;
+	-int partieDroite;
+	
+JoueurDomino:// class
+Implement: Joueur;
+Argument(s):
+	LinkedList<Domino> joueurMain;		//Liste des domino du joueur
+	final int ordre;    			//Ordre de passage
+
+JeuDomino://class
+Implement : Initialement;Commencement ;
+Argument(s):
+	-LinkedList<JoueurDominos> joueurs;
+		
+Plusieurs fonctions :
+	-public boolean estCorrect()		//sur la pièce de domino					Renvoie vrai si la piece d'avant possede un des motif de la piece que l'on veut placé
+
+Fin(JE CROIS)
