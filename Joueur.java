@@ -6,13 +6,13 @@ public abstract class Joueur {
 		this.age=age;
 		this.name=name;
 	}
-	
-	public abstract void jeuEnMain(); 
-	
+
+	public abstract void jeuEnMain();
+
 	public String toString() {
-		return "Nom : "+this.name+" âge : "+this.age;
+		return "Nom : "+this.name+" age : "+this.age;
 	}
-	
-	
-	
+
+
+
 }

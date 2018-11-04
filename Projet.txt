@@ -1,27 +1,35 @@
 Interface Joueur c'est suuuuuuuuuuuuuuuur
 
-////////////////////////////////Pour domino-gomettes //////////////////////////////
+////////////////////////////////Pour Domino GÃ©nÃ©ral/////////////////////////////////
+
+Il y Ã  2 cas:
+
+Soit on utilise les varible avec le type var pour le haut et le bas du domino comme Ã§a domino n'aura pas besoin
+d'Ãªtre abstraite et tout pourra ce sfaire dans la classe Domino. Pour afficher les domino par exemple que cela
+soit un dessin, un chiffre ou une couleur on pourra tout mettre dans les attribut var( comme en python).
+
+Soit on la met abstraite mais il faudra donc des classe en plus pour les 2 type de jeu de domino
+
+////////////////////////////////Pour domino-gomettes ///////////////////////////////
 
 Atribut simple(Basique) Forme et couleur
-Si même couleur U même forme un foncion renverra true.
-Comme les règle son basiquement les même que pour le domino normale, on pourra utiliser les condition 
-de victoire ou de défaite dans une interface avec une fonction qui renverra un boolean
+Si mï¿½me couleur U mï¿½me forme un foncion renverra true.
+Comme les rï¿½gle son basiquement les mï¿½me que pour le domino normale, on pourra utiliser les condition
+de victoire ou de dï¿½faite dans une interface avec une fonction qui renverra un boolean
 le gros du probleme reste tjrs la partie graphique
 
 
 
 
 
-//////////////////////////////////Pour puzzle:///////////////////////////////////////
+////////////////////////////////Pour puzzle:///////////////////////////////
 
-Toute les piece sont blanche au début 
+Toute les piece sont blanche au dï¿½but
 
-A verifié pour sûr: les coin et côté
+A verifiï¿½ pour sï¿½r: les coin et cï¿½tï¿½
 
 On peut utiliser des attribut haut, bas, gauche, droite
-Il y aura différent états selon les côté
-Pour les coté par exemple il y aura des états qui seron null car il ne peuvent pas se "connecter sur plusieurs côte"
-Les fonction sont assez simple à mettre en place
-La véritable dificulté sera les graphisme.
-
-                      
+Il y aura diffï¿½rent ï¿½tats selon les cï¿½tï¿½
+Pour les cotï¿½ par exemple il y aura des ï¿½tats qui seron null car il ne peuvent pas se "connecter sur plusieurs cï¿½te"
+Les fonction sont assez simple ï¿½ mettre en place
+La vï¿½ritable dificultï¿½ sera les graphisme.
