@@ -4,13 +4,28 @@ Interface Joueur c'est suuuuuuuuuuuuuuuur
 
 Il y à 2 cas:
 
-Soit on utilise les varible avec le type var pour le haut et le bas du domino comme ça domino n'aura pas besoin
-d'être abstraite et tout pourra ce sfaire dans la classe Domino. Pour afficher les domino par exemple que cela
-soit un dessin, un chiffre ou une couleur on pourra tout mettre dans les attribut var( comme en python).
+Soit on utilise les varible avec le type var pour le haut et le bas du domino comme
+ça domino n'aura pas besoin d'être abstraite et tout pourra ce sfaire dans la classe
+Domino. Pour afficher les domino par exemple que cela soit un dessin, un chiffre ou
+une couleur on pourra tout mettre dans les attribut var( comme en python).
 
-Soit on la met abstraite mais il faudra donc des classe en plus pour les 2 type de jeu de domino
+Soit on la met abstraite mais il faudra donc des classe en plus pour les 2 type de
+jeu de domino.
 
-////////////////////////////////Pour domino-gomettes ///////////////////////////////
+////////////////////////////////Pour la classe main/////////////////////////////////
+
+on va remplire la main avec une autre classe(la classe pioche).
+
+il y aura une fonction qui va afficher les dominos que le joueur à en main.
+
+
+/////////////////////////////////Pour la classe Pioche/////////////////////////////////
+
+On va utiliser une liste de domino qui va contenir tout les dominos.
+Cette liste va être ensuite, grâce à une fonction, ajouter des dominos dans les objet
+Mains. Leur reste de la liste sera une pioche.
+
+////////////////////////////////Pour domino-gomettes/////////////////////////////////
 
 Atribut simple(Basique) Forme et couleur
 Si m�me couleur U m�me forme un foncion renverra true.
