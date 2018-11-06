@@ -1,16 +1,16 @@
 
 public class Domino {
 
-var haut;
-var bas;
+  var haut;
+  var bas;
 
-public Domino(var h, var b){
-haut = h;
-bas = b;
-}
+  public Domino(var h, var b){
+    haut = h;
+    bas = b;
+  }
 
 
-
+  
 
 
 }
