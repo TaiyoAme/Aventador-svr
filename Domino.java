@@ -1,16 +1,18 @@
 
 public class Domino {
 
-  var haut;
-  var bas;
+	String haut;
+	String bas;
 
-  public Domino(var h, var b){
-    haut = h;
-    bas = b;
-  }
+	public Domino(String h, String b) {
+		haut = h;
+		bas = b;
+	}
 
-
-  
-
-
+	
+	
+	public String toString() {
+		
+		return "Haut: "+haut+" Bas:"+bas;
+	}
 }
