@@ -11,8 +11,6 @@ public class Domino {
 
 	
 	
-	
-	
 	public String toString() {
 		
 		return "Haut: "+haut+" Bas:"+bas;
