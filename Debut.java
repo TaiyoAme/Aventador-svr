@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.LinkedList;
 public abstract class Debut {
 	
 	protected Joueur plusJeune(LinkedList<Joueur> listJoueur) {
@@ -12,7 +12,7 @@ public abstract class Debut {
 			}
 		}return jeune;
 	}
-	protected abstract Joueur doubleLePlusGrand();
+	//protected abstract Joueur doubleLePlusGrand(); Domino ;
 	
 	protected abstract Joueur PiocheEleve();
 	

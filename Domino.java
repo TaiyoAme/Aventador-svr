@@ -10,16 +10,18 @@ public class Domino {
 		  this.droit = d;
 		  this.collerd=false;
 		  this.collerg=false;
-	  }
+	}
 	
-	  public String toString() {
+	public String toString() {
 		  return "Domino :"+this.gauche+"/"+this.droit;
-	  }
-	  public int getDroit() {
+	}
+	
+	public int getDroit() {
 		  return Integer.parseInt(droit);
-	  }
-	  public int getGauche() {
+	}
+	
+	public int getGauche() {
 		  return Integer.parseInt(gauche);
-	  }
-
+	}
+	
 }
