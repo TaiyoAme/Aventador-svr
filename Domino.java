@@ -1,24 +1,16 @@
 
-public class Domino extends Piece{
-	private String gauche;
-	private String droit;
-	public boolean collerg;
-	public boolean collerd;
+public class Domino {
 
-  public Domino(String g, String d){
-	  this.gauche = g;
-	  this.droit = d;
-	  this.collerd=false;
-	  this.collerg=false;
+  var haut;
+  var bas;
+
+  public Domino(var h, var b){
+    haut = h;
+    bas = b;
   }
-  public String toString() {
-	  return "Domino :"+this.gauche+"/"+this.droit;
-  }
-  public int getDroit() {
-	  return Integer.parseInt(droit);
-  }
-  public int getGauche() {
-	  return Integer.parseInt(gauche);
-  }
-//Non
+
+
+  
+
+
 }
