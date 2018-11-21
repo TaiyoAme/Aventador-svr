@@ -20,5 +20,5 @@ public class Domino extends Piece{
   public int getGauche() {
 	  return Integer.parseInt(gauche);
   }
-
+//Non
 }
