@@ -11,6 +11,8 @@ une couleur on pourra tout mettre dans les attribut var( comme en python).
 
 Soit on la met abstraite mais il faudra donc des classe en plus pour les 2 type de
 jeu de domino.
+Utiliser une fonction qui renverra un string pour le haut et bas du domino.
+
 
 ////////////////////////////////Pour la classe main/////////////////////////////////
 
