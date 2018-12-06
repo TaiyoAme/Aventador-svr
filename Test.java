@@ -14,7 +14,8 @@ public class Test {
 			a++;
 			b++;
 		}
-
-	}
+		Window w = new Window();
+		w.startView();
+	}	
 
 }

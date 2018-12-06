@@ -2,14 +2,18 @@
 public class Domino {
 	private String gauche;
 	private String droit;
-	private boolean collerd;
-	private boolean collerg;
+	private boolean cd; 		//Coté gauche
+	private boolean cg;			//Coté gauche haut
+	private boolean cgh; 		//Coté gauche bas
+	private boolean cgb; 		//Coté droit
+	private boolean cdh; 		//Coté droit haut
+	private boolean cdb; 		//Coté droit bas
+	private boolean cmh; 		//Coté milieu haut
+	private boolean cmb; 		//Coté milieu haut
 	
 	public Domino(String g, String d){
 		  this.gauche = g;
 		  this.droit = d;
-		  this.collerd=false;
-		  this.collerg=false;
 	}
 	
 	public String toString() {

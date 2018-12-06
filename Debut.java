@@ -12,8 +12,8 @@ public abstract class Debut {
 			}
 		}return jeune;
 	}
-	//protected abstract Joueur doubleLePlusGrand(); Domino ;
+	protected abstract Joueur doubleLePlusGrand();// Domino; return null pour les autre jeux
 	
-	protected abstract Joueur PiocheEleve();
+	protected abstract Joueur PiocheEleve(); //Domino;  meme chose
 	
 }
