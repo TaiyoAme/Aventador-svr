@@ -1,5 +1,5 @@
 
-public class Domino {
+public class Domino extends Piece{
 	private String gauche;
 	private String droit;
 	private boolean cd; 		//Coté gauche
