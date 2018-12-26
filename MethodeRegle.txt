@@ -38,3 +38,11 @@ Plusieurs fonctions :
 	-public boolean estCorrect()		//sur la pièce de domino					Renvoie vrai si la piece d'avant possede un des motif de la piece que l'on veut placé
 
 Fin(JE CROIS)
+
+Puzzle:
+
+Faire tableau de tableau avec des id pour chaque pièce avec le constructeur.
+
+Les id doive juste être dans l'odre croissant pour que la condition de réussite soit validée.
+
+

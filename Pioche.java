@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+
 public class Pioche{
 	
 	LinkedList<Domino> pioche = new LinkedList<Domino>(); 
