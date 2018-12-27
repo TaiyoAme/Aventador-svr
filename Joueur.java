@@ -18,7 +18,7 @@ public abstract class Joueur {
 	} 
 	
 	public String toString() {
-		return "Nom : "+this.name+" age : "+this.age;
+		return "Nom : "+this.name+" age : "+this.age ;
 	}
 	
 	

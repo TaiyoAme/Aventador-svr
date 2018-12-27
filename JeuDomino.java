@@ -15,15 +15,14 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class JeuDomino {
-	ArrayList<Joueur> listJoueur;
+	ArrayList<Joueur> listJoueur = new ArrayList<Joueur>();
 	ArrayList<Domino> pioche;
 	int tour;
 	InitJoueur iJ;
 	
 	public JeuDomino() {
-		iJ = new InitJoueur();
-		this.listJoueur = iJ.listJoueur;
 		
+		iJ = new InitJoueur();
 	}
 	public void piocher(Joueur player) {
 		int a =(int) (Math.random() * (pioche.size()));
@@ -38,7 +37,6 @@ public class JeuDomino {
 		private JLabel label2 = new JLabel("Age du joueur    ");
 		JButton b1 = new JButton ("Ajouter un autre joueur");
 		JButton b2 = new JButton ("Choix du jeu");
-		ArrayList<Joueur> listJoueur;
 		
 		public InitJoueur() {
 			//INITIALISATION DES JOUEURS
@@ -54,16 +52,19 @@ public class JeuDomino {
 		    jtf1.setForeground(Color.BLUE);
 		    jtf2.setPreferredSize(new Dimension(150, 30));
 		    b1.addActionListener(e -> {
-		    	Joueur ajout = new JoueurDomino(Integer.parseInt(jtf2.getText()),jtf1.getText());
+		    	JoueurDomino ajout = new JoueurDomino(Integer.parseInt(jtf2.getText()),jtf1.getText());
+		    	System.out.print(ajout);
 		    	listJoueur.add(ajout);
-		    	if(listJoueur.size()>=4) {
+		    	if(listJoueur.size()>=2) {
 		    		b1.setEnabled(false);
-		    	}else if (listJoueur.size()>=2) {
 		    		b2.setEnabled(true);
-		    	}
+		    		}
 		    });
 		    b2.addActionListener(e -> {
-		    
+		    	this.dispose();
+		    	for (Joueur j : listJoueur) {
+					System.out.println(j);
+				}
 		    });
 		    b2.setEnabled(false);
 		    top.add(label1);
@@ -74,6 +75,9 @@ public class JeuDomino {
 		    top.add(b2);
 		    this.setContentPane(top);
 		    this.setVisible(true);
+		}
+		public ArrayList<Joueur> getJ(){
+			return listJoueur;
 		}
 	}
 }

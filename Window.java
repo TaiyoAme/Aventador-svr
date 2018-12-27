@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -20,26 +21,10 @@ import javax.swing.JButton;
 
 public class Window extends JFrame{
 	JButton quitter = new JButton ("quitter");
-	
-	//	JTextField login;
-//    JTextField pass;
+	ArrayList<Joueur> listJ= new ArrayList<Joueur>();
 
-//    public Window() throws InterruptedException{
-//        login = new JTextField();
-//        pass = new JTextField();
-//        pass.addActionListener(new ActionListener(){
-//            public void actionPerformed(ActionEvent arg0) {
-//                 System.out.println("DO SOMETHING");
-//            }       
-//        });
-//        add(login,BorderLayout.NORTH);
-//        add(pass,BorderLayout.SOUTH);
-//        pack();
-//        setVisible(true);
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//    }
-//	
-	public Window () {
+
+	public Window (ArrayList<Joueur> lis) {
 		this.setVisible(true);
 		
 		this.setSize(850, 600);
