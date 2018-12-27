@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.text.NumberFormat;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -19,10 +20,11 @@ public class JeuDomino {
 	ArrayList<Domino> pioche;
 	int tour;
 	InitJoueur iJ;
+	Window dableyou;
 	
 	public JeuDomino() {
-		
 		iJ = new InitJoueur();
+		
 	}
 	public void piocher(Joueur player) {
 		int a =(int) (Math.random() * (pioche.size()));
@@ -41,7 +43,7 @@ public class JeuDomino {
 		public InitJoueur() {
 			//INITIALISATION DES JOUEURS
 			this.setTitle("Initialisation des joueurs");
-		    this.setSize(300, 300);
+		    this.setSize(300, 150);
 		    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    this.setLocationRelativeTo(null);
 		    container.setBackground(Color.white);
@@ -52,6 +54,8 @@ public class JeuDomino {
 		    jtf1.setForeground(Color.BLUE);
 		    jtf2.setPreferredSize(new Dimension(150, 30));
 		    b1.addActionListener(e -> {
+		    	try {Integer.parseInt(jtf2.getText());}
+		    	catch(NumberFormatException exc) {System.out.println();}
 		    	JoueurDomino ajout = new JoueurDomino(Integer.parseInt(jtf2.getText()),jtf1.getText());
 		    	System.out.print(ajout);
 		    	listJoueur.add(ajout);
@@ -62,9 +66,7 @@ public class JeuDomino {
 		    });
 		    b2.addActionListener(e -> {
 		    	this.dispose();
-		    	for (Joueur j : listJoueur) {
-					System.out.println(j);
-				}
+		    	dableyou = new Window(listJoueur);
 		    });
 		    b2.setEnabled(false);
 		    top.add(label1);
@@ -75,9 +77,6 @@ public class JeuDomino {
 		    top.add(b2);
 		    this.setContentPane(top);
 		    this.setVisible(true);
-		}
-		public ArrayList<Joueur> getJ(){
-			return listJoueur;
 		}
 	}
 }
