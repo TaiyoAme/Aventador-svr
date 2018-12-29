@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 public class JeuDomino {
 	ArrayList<Joueur> listJoueur = new ArrayList<Joueur>();
-	ArrayList<Domino> pioche;
+	Pioche pioche = new Pioche();
 	int tour;
 	InitJoueur iJ;
 	Window dableyou;
@@ -27,9 +27,10 @@ public class JeuDomino {
 		
 	}
 	public void piocher(Joueur player) {
-		int a =(int) (Math.random() * (pioche.size()));
-		Piece aj= pioche.get(a);
+		int a =(int) (Math.random() * (pioche.taille()));
+		Piece aj= pioche.getP(a);
 		player.mainsJoueur.add(aj);
+		pioche.removeP(a);
 	}
 	public class InitJoueur extends JFrame{
 		private JPanel container = new JPanel();
@@ -79,4 +80,32 @@ public class JeuDomino {
 		    this.setVisible(true);
 		}
 	}
+	public Joueur fin() {				// Fonction returnant le vainqueur et null si il y en a pas.
+		for (Joueur j : listJoueur) {   // Victoire si une personne n'a plus de domino , pioche vide ou pas
+			if (j.mainsJoueur.size()==0) {
+				return j;
+			}
+		}int min  = 28;
+		if(pioche.taille()==0) {
+			for(Joueur k :listJoueur) {
+				if(k.mainsJoueur.size()<min) {
+					min = k.mainsJoueur.size();
+				}
+			}for(Joueur l :listJoueur) {		// Victoire de celui ayant le moins de domino lorsque la pioche est vide
+				if(l.mainsJoueur.size()==min) {
+					return l;
+				}
+			}
+		}
+		return null;
+	}
+	
+	public void distributionD() {
+		for (Joueur j : listJoueur) {
+			for (int i = 0; i<5 ; i++) {
+				this.piocher(j);
+			}
+		}
+	}
+	
 }

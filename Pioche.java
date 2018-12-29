@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 public class Pioche{
-	LinkedList<Domino> pioche = new LinkedList<Domino>();
+	LinkedList<Piece> pioche = new LinkedList<Piece>();
+	
 	public Pioche(){
 		int a = 0;
 		int b = 0;
@@ -12,4 +13,13 @@ public class Pioche{
 			b++;
 		}
 	}
-}
+	public int taille() {
+		return pioche.size();
+	}
+	public Piece getP(int a) {
+		return pioche.get(a);
+	}
+	public void removeP (int a ) {
+		pioche.remove(a);
+	}
+	}
