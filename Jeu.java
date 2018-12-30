@@ -1,0 +1,9 @@
+
+public abstract class Jeu {
+	//PEUT ETRE METTRE UN EXTENDS DEPUIS JEUDOMINO ET METTRE INIT JOUEUR FIN ET DEBUT ICI 
+	
+	
+	
+	
+	
+}

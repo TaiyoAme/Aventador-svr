@@ -21,6 +21,8 @@ public class JeuDomino {
 	int tour;
 	InitJoueur iJ;
 	Window dableyou;
+	Domino[][] plateau = new Domino [30][30];
+	Domino premier ;
 	
 	public JeuDomino() {
 		iJ = new InitJoueur();
@@ -107,5 +109,13 @@ public class JeuDomino {
 			}
 		}
 	}
-	
+	/*public boolean correct() {
+		if (tour>0 && premier.accord()) {
+			return true;
+		}
+		
+		
+		
+		return false;
+	}*/
 }
