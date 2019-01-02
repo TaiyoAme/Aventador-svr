@@ -8,7 +8,7 @@ public class ViewDomino extends JFrame {
 
 		GameWin j1 = new GameWin(l,h,Color.WHITE) ;
 		
-		Mains j2 = new Mains(l,h,Color.ORANGE);
+		Mains j2 = new Mains(l,h,Color.WHITE);
 		
 		setSize(l,h);
 		setVisible(b);

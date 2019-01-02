@@ -11,7 +11,7 @@ public class Mains extends JPanel {
 
 	public Mains(int l, int h, Color c) {
 		Domino d1 = new Domino("Domino/0-0-h.jpg",c);
-		Domino d2 = new Domino("Domino/2-5.jpg",c);
+		Domino d2 = new Domino("Domino/0-0.jpg",c);
 		Domino d3 = new Domino("Domino/2-2.jpg",c);
 		Domino d4 = new Domino("Domino/3-4.jpg",c);
 		Domino d5 = new Domino("Domino/2-5.jpg",c);
