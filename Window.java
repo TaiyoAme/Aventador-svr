@@ -30,7 +30,7 @@ public class Window extends JFrame{
 		this.setSize(850, 600);
 		this.setLocationRelativeTo(null);	
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		this.startView();
 		
 
 	}
@@ -87,7 +87,7 @@ public class Window extends JFrame{
 		pChoix.add(puzzle);
 		pChoix.add(saboteur);
 		pChoix.add(quitter);
-		PanelImage img = new PanelImage(new File("D:\\L2 info\\POOIG\\ProjectPOOS3\\src\\Menu.png"));
+		PanelImage img = new PanelImage(new File("Menu.png"));
 		JPanel remp = new JPanel();
 		this.add(img);
 		
@@ -99,23 +99,23 @@ public class Window extends JFrame{
 		
 	}
 	public void dominoView() {
-		PanelImage idf = new PanelImage (new File("D:\\L2 info\\POOIG\\ProjectPOOS3\\src\\ImageDominoFond.jpg"));
+		PanelImage idf = new PanelImage (new File("ImageDominoFond.jpg"));
 		this.add(idf);
 		this.setLayout(new GridLayout(1,1));
 	}
 	
 	public void dominoColorView() {
-		PanelImage idf = new PanelImage (new File("D:\\L2 info\\POOIG\\ProjectPOOS3\\src\\IdfDC.jpg"));
+		PanelImage idf = new PanelImage (new File("IdfDC.jpg"));
 		this.add(idf);
 		this.setLayout(new GridLayout(1,1));
 	}
 	public void puzzleView() {
-		PanelImage idf = new PanelImage (new File("D:\\L2 info\\POOIG\\ProjectPOOS3\\src\\PuzzleFond.jpg"));
+		PanelImage idf = new PanelImage (new File("PuzzleFond.jpg"));
 		this.add(idf);
 		this.setLayout(new GridLayout(1,1));
 	}
 	public void saboteurView() {
-		PanelImage idf = new PanelImage (new File("D:\\L2 info\\POOIG\\ProjectPOOS3\\src\\SaboteurFond.jpg"));
+		PanelImage idf = new PanelImage (new File("SaboteurFond.jpg"));
 		this.add(idf);
 		this.setLayout(new GridLayout(1,1));
 	}
