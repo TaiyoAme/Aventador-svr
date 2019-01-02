@@ -7,3 +7,14 @@
 /Piece.class
 /JoueurDomino.class
 /Gommette.class
+/JeuDomino.class
+/Window.class
+/Window$PanelImage.class
+/JeuDomino$InitJoueur.class
+/ExcAge.class
+/Jeu.class
+/ViewDomino.class
+/GameWin.class
+/Domino$1.class
+/Domino$DragMouseAdapter.class
+/DragMouseAdapter.class

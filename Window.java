@@ -99,9 +99,7 @@ public class Window extends JFrame{
 		
 	}
 	public void dominoView() {
-		PanelImage idf = new PanelImage (new File("ImageDominoFond.jpg"));
-		this.add(idf);
-		this.setLayout(new GridLayout(1,1));
+		ViewDomino v = new ViewDomino(true,1500,700);
 	}
 	
 	public void dominoColorView() {
