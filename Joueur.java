@@ -21,7 +21,5 @@ public abstract class Joueur {
 		return "Nom : "+this.name+" age : "+this.age ;
 	}
 	
-	
-	
 
 }

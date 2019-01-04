@@ -36,7 +36,7 @@ public class JeuDomino {
 	}
 	public class InitJoueur extends JFrame{
 		private JPanel container = new JPanel();
-		private JTextField jtf1 = new JTextField("ex: Kévin");
+		private JTextField jtf1 = new JTextField("ex: Herve");
 		private JTextField jtf2 = new JTextField("ex: 13");;
 		private JLabel label1 = new JLabel("Pseudo/Prénom");
 		private JLabel label2 = new JLabel("Age du joueur    ");
