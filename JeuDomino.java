@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -57,7 +58,10 @@ public class JeuDomino {
 		    jtf2.setPreferredSize(new Dimension(150, 30));
 		    b1.addActionListener(e -> {
 		    	try {Integer.parseInt(jtf2.getText());}
-		    	catch(NumberFormatException exc) {System.out.println();}
+		    	catch(NumberFormatException exc) {
+		    		JOptionPane jop = new JOptionPane();
+		    		jop.showMessageDialog(null, "Vérifiez qu'il y a pas de caractère la case âge", "Attention", JOptionPane.WARNING_MESSAGE);
+		    	}
 		    	JoueurDomino ajout = new JoueurDomino(Integer.parseInt(jtf2.getText()),jtf1.getText());
 		    	System.out.print(ajout);
 		    	listJoueur.add(ajout);
