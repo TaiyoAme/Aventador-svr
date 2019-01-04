@@ -62,7 +62,12 @@ public class Window extends JFrame{
 		
 		puzzle.addActionListener(e -> {
 			this.getContentPane().removeAll();
-			this.puzzleView();
+			try {
+				this.puzzleView();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			this.repaint();
 		});
 		
@@ -107,10 +112,8 @@ public class Window extends JFrame{
 		this.add(idf);
 		this.setLayout(new	 GridLayout(1,1));
 	}
-	public void puzzleView() {
-		PanelImage idf = new PanelImage (new File("PuzzleFond.jpg"));
-		this.add(idf);
-		this.setLayout(new GridLayout(1,1));
+	public void puzzleView() throws IOException {
+		ViewPuzzle v = new ViewPuzzle(true,1500,700);
 	}
 	public void saboteurView() {
 		PanelImage idf = new PanelImage (new File("SaboteurFond.jpg"));
