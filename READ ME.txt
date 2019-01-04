@@ -1,0 +1,17 @@
+\\\ IMPORTANT VEUILLEZ SUIVRE LES INSTRUCTIONS DONNES CI-DESSUS ///
+
+Tout d'abords après avoir lancer main.java, une petite fenêtre 
+devraît apparaître afin de pouvoir renseigner le jeu de quelques
+informations concernant les utilisateurs(Pseudo/nom en bleu et 
+l'âge en noir).
+
+On force a ce qu'il y ait 2 personne (Forcément) , pour que l'on 
+puisse appuyer sur le bouton "Choix du jeu"
+En effet, celui-ci ne peut être déclenché que lorsqu'il y a
+2 joueurs 
+
+Ensuite choisissez un jeu parmi les jeux proposés (certain jeux
+étant inachevé vous verrez appairaitre un photo du dis jeux si
+ceux ci n'ont pas encore eu d'interface graphique)
+
+ 
