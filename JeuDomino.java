@@ -60,7 +60,7 @@ public class JeuDomino {
 		    	try {Integer.parseInt(jtf2.getText());}
 		    	catch(NumberFormatException exc) {
 		    		JOptionPane jop = new JOptionPane();
-		    		jop.showMessageDialog(null, "Vérifiez qu'il y a pas de caractère la case âge", "Attention", JOptionPane.WARNING_MESSAGE);
+		    		jop.showMessageDialog(null, "Vérifiez qu'il y a pas de caractère dans la case âge", "Attention", JOptionPane.WARNING_MESSAGE);
 		    	}
 		    	JoueurDomino ajout = new JoueurDomino(Integer.parseInt(jtf2.getText()),jtf1.getText());
 		    	System.out.print(ajout);
