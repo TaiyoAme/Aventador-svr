@@ -22,11 +22,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.TransferHandler;
 
-public class GameWin extends JPanel {
+public class GameWinDomino extends JPanel {
 	ImageIcon im;
 	MouseListener listener;
 	JLabel[] tj;
-		public GameWin(int l, int h, Color c) {
+		public GameWinDomino(int l, int h, Color c) {
 			listener = new DragMouseAdapter();
 			tj = new JLabel[203];
 			im = new ImageIcon("Image/point.jpg");

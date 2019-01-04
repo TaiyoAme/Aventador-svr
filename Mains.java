@@ -13,10 +13,10 @@ public class Mains extends JPanel {
 	public Mains(int l, int h, Color c) {
 		Domino d1 = new Domino("1","5");
 		Domino d2 = new Domino("2","2");
-		Domino d3 = new Domino("2","3");
+		Domino d3 = new Domino("2","3-h");
 		Domino d4 = new Domino("1","1");
 		Domino d5 = new Domino("0","1");
-		Domino d6 = new Domino("0","0");
+		Domino d6 = new Domino("0","0-h");
 		JLabel nomJoueur = new JLabel("Joueur:1");
 		setPreferredSize(new Dimension(l, h / 4));
 		setBackground(c);

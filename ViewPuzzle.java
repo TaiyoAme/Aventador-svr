@@ -8,10 +8,10 @@ import javax.swing.JFrame;
 public class ViewPuzzle extends JFrame {
 	public ViewPuzzle(boolean b,int l , int h) throws IOException  {
 
-		GameWin j1 = new GameWin(l,h,Color.WHITE) ;
+		GameWinDomino j1 = new GameWinDomino(l,h,Color.WHITE) ;
 		
-		Puzzle j2 = new Puzzle("Image/GTR2.jpg",l,h,Color.ORANGE); 
-		
+		Puzzle j2 = new Puzzle("Image/Python.jpg",l,h,Color.ORANGE); 
+		setTitle("Puzzle");
 		setSize(l,h);
 		setVisible(b);
 		setLayout(new BorderLayout());
