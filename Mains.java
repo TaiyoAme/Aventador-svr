@@ -3,6 +3,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.*;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Mains extends JPanel {
@@ -16,6 +17,7 @@ public class Mains extends JPanel {
 		Domino d4 = new Domino("1","1");
 		Domino d5 = new Domino("0","1");
 		Domino d6 = new Domino("0","0");
+		JLabel nomJoueur = new JLabel("Joueur:1");
 		setPreferredSize(new Dimension(l, h / 4));
 		setBackground(c);
 		setLayout(new FlowLayout());
