@@ -105,7 +105,7 @@ public class Window extends JFrame{
 	public void dominoColorView() {
 		PanelImage idf = new PanelImage (new File("IdfDC.jpg"));
 		this.add(idf);
-		this.setLayout(new GridLayout(1,1));
+		this.setLayout(new	 GridLayout(1,1));
 	}
 	public void puzzleView() {
 		PanelImage idf = new PanelImage (new File("PuzzleFond.jpg"));

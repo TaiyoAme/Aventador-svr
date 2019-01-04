@@ -69,6 +69,7 @@ public class JeuDomino {
 		    b2.addActionListener(e -> {
 		    	this.dispose();
 		    	dableyou = new Window(listJoueur);
+		    	
 		    });
 		    b2.setEnabled(false);
 		    top.add(label1);
