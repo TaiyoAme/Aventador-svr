@@ -17,7 +17,7 @@ public class Test {
 	//	Window w = new Window();
 	//	w.startView();
 		JeuDomino jD = new JeuDomino();
-		System.out.println(System.getProperty("user.dir"));
+		
 	}	
 
 }

@@ -21,8 +21,9 @@ class DragMouseAdapter extends MouseAdapter {
 public class Domino extends Piece{
 	private String gauche;
 	private String droit;
-	ImageIcon i;
-	JLabel jl;
+	 String s;
+	 ImageIcon i;
+	 JLabel jl;
 	MouseListener listener;
 	private boolean vertical;
 	private boolean cd; 		//Coté gauche
@@ -39,15 +40,12 @@ public class Domino extends Piece{
 	public Domino(String g, String d){
 		  this.gauche = g;
 		  this.droit = d;
-	}
-	
-	
-	
-	public Domino(String d,Color c) {
+		  
+		s ="Domino/"+gauche+"-"+droit+".jpg";
 		listener = new DragMouseAdapter();
-			i = new ImageIcon(d);
-			jl = new JLabel(i);
-			jl.addMouseListener(listener);
+		i = new ImageIcon(s);
+		jl = new JLabel(i);
+		jl.addMouseListener(listener);
 		jl.setTransferHandler(new TransferHandler("icon") {
 			// Code qui permet d'utiliser la fonction MOVE (Par défaut le getSource Action ne 
 			//permet que la copy).

@@ -30,7 +30,11 @@ public class GameWin extends JPanel {
 			listener = new DragMouseAdapter();
 			tj = new JLabel[200];
 			im = new ImageIcon("Image/point.jpg");
-			setLayout(new FlowLayout());
+			FlowLayout fl = new FlowLayout();
+			fl.setHgap(0);
+			fl.setVgap(0);
+			setLayout(fl);
+//			setLayout(new FlowLayout());
 			for (int i = 0; i < 200; i++) {
 				tj[i] = new JLabel(im);
 				tj[i].addMouseListener(listener);
