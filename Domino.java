@@ -53,6 +53,7 @@ public class Domino extends Piece{
 			  protected void exportDone(JComponent source, Transferable data, int action) {
 		  if (action == MOVE){
 		      ((JLabel) source).setVisible(false);
+		      
 		  }
 		}
 		@Override

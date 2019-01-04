@@ -21,7 +21,6 @@ public class JeuDomino {
 	int tour;
 	InitJoueur iJ;
 	Window dableyou;
-	Domino[][] plateau = new Domino [30][30];
 	Domino premier ;
 	
 	public JeuDomino() {

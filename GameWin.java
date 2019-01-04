@@ -28,15 +28,16 @@ public class GameWin extends JPanel {
 	JLabel[] tj;
 		public GameWin(int l, int h, Color c) {
 			listener = new DragMouseAdapter();
-			tj = new JLabel[200];
+			tj = new JLabel[203];
 			im = new ImageIcon("Image/point.jpg");
 			FlowLayout fl = new FlowLayout();
 			fl.setHgap(0);
 			fl.setVgap(0);
 			setLayout(fl);
 //			setLayout(new FlowLayout());
-			for (int i = 0; i < 200; i++) {
+			for (int i = 0; i < 203; i++) {
 				tj[i] = new JLabel(im);
+				tj[i].setName(""+i);
 				tj[i].addMouseListener(listener);
 				tj[i].setTransferHandler(new TransferHandler("icon"));
 				add(tj[i]);

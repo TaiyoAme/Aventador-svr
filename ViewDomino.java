@@ -4,6 +4,7 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 public class ViewDomino extends JFrame {
+	
 	public ViewDomino(boolean b,int l , int h) {
 
 		GameWin j1 = new GameWin(l,h,Color.WHITE) ;
